@@ -5,15 +5,15 @@
       <!-- 介绍 -->
       <div class="about-item hello">
         <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 九天之上</span>  
-        <span class="text3">是一名 又菜又爱玩的小白</span>
+        <span class="text2 title2">我是 zczc</span>  
+        <span class="text3">是一名 OIer、florr玩家、zorr努不</span>
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">
         <span class="tip">追求</span>
-        <span class="title2">源于</span>
-        <span class="title2">热爱而去开发</span>
-        <span class="title2">优秀的作品</span>
+        <span class="title2">CSP-S一等</span>
+        <span class="title2">florr 5s</span>
+        <span class="title2">zorr 20s</span>
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 2fr 3fr">
@@ -37,56 +37,33 @@
           </a>
         </div>
       </div>
+      <!-- 生涯 -->
+      <div class="about-item career">
+        <span class="tip">生涯</span>
+        <span class="title2">
+          <i>無限進步</i>
+        </span>
+        <div class="list">
+          <span class="list-item" style="--color: #357ef5">OIer · 信奥生</span>
+        </div>
+      </div>
     </div>
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
-    </div>
-    <div class="about-content" style="grid-template-columns: 2fr 3fr">
-      <!-- 数据 -->
-      <div
-        class="about-item static image"
-        style="
-          --color: #0f1114;  
-          background-image: url(https://pan.811520.xyz/2024-11/1730613487-20230703084704275.webp);
-        "
-      >
-        <div class="image-content">
-          <span class="tip">数据</span>
-          <span class="title2">访问统计</span>
-          <div class="static-data">
-            <div v-for="(item, key, index) in statisticsData" :key="index" class="static-item">
-              <span class="static-name">{{ key }}</span>
-              <span class="static-num">{{ item }}</span>
-            </div>
-          </div>
-          <div class="image-desc opacity">
-            <span class="left">
-              统计信息来自 <a href="https://v6.51.la/" target="_blank">51la</a>
-            </span>
-          </div>
-        </div>
+      <!-- 性格 -->
+      <div class="about-item character" style="--color: #4298b4">
+        <span class="tip">性格</span>
+        <span class="title2">调停者</span>
+        <span class="title2" style="color: var(--color)">INFP</span>
+        <span class="more">
+          在
+          <a href="https://www.16personalities.com/ch/" target="_blank">16personalities</a>
+          了解更多关于
+          <a href="https://www.16personalities.com/ch/infp-%E4%BA%BA%E6%A0%BC" target="_blank">
+            调停者
+          </a>
+        </span>
       </div>
-      <!-- 信息 -->
-      <div class="about-item child">
-        <div
-          class="about-item map image"
-          style="background-image: url(https://pan.811520.xyz/2024-10/1730361853-1730361845894.webp)"
-        >
-          <span class="position">我现在住在 <strong>中国，武汉</strong></span>
-        </div>
-        <div class="about-item info">
-          <div class="info-item">
-            <span class="info-name">生于</span>
-            <span class="info-num" style="--color: #43a6c6">保密</span>
-          </div>
-          <div class="info-item">
-            <span class="info-name">现在职业</span>
-            <span class="info-num" style="--color: #dfac46">资深房地产营销管理</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 心路历程 -->
-    <div class="about-content" style="display: flex">
+      <!-- 心路历程 -->
       <div class="about-item">
         <span class="tip">心路历程</span>
         <span class="title2">为什么建站？</span>
@@ -94,7 +71,7 @@
           创建这个站的时候，想要就是能够有一个自己能够<strong>积累知识</strong>、<strong>积累兴趣</strong>的地方。和他人分享，会让这些成为<strong>积累和沉淀</strong>。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。
         </p>
         <p class="text">
-          这里内容很杂，<strong>工作、生活、资源分享……</strong>什么都有，可能不太会有很多人看，权当是做个自我记录吧。当然，如果某篇文章能够帮助到你，那我也是很开心的。
+          这里大多是闲着没事写的个人记录。当然，如果某篇文章能够帮助到你，那我也是很开心的。
         </p>
         <p class="text">
           这些就是创造这个小站的本意，<strong>也是我分享生活的方式</strong>。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。
@@ -112,70 +89,16 @@ const { theme } = useData();
 // 技能数据
 const skillsData = [
   {
-    name: "JavaScript",
-    color: "#f1e05abd",
-    icon: "javascript",
-    link: "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript",
-  },
-  {
-    name: "HTML5",
-    color: "#e34f26",
-    icon: "html5",
-    link: "https://developer.mozilla.org/zh-CN/docs/Web/HTML",
-  },
-  {
-    name: "CSS3",
-    color: "#563d7c",
-    icon: "css3",
-    link: "https://developer.mozilla.org/zh-CN/docs/Web/CSS",
-  },
-  {
-    name: "Vue",
-    color: "#41b883",
-    icon: "vue",
-    link: "https://cn.vuejs.org/",
-  },
-  {
-    name: "React",
-    color: "#149ECA",
-    icon: "react",
-    link: "https://zh-hans.reactjs.org/",
-  },
-  {
-    name: "Node.js",
-    color: "#026E00",
-    icon: "nodejs",
-    link: "https://nodejs.org/",
-  },
-  {
     name: "Python",
     color: "#3776AB",
     icon: "python",
     link: "https://www.python.org/",
   },
   {
-    name: "Docker",
-    color: "#2496f2",
-    icon: "docker",
-    link: "https://www.docker.com/",
-  },
-  {
-    name: "Git",
-    color: "#F05032",
+    name: "C++",
+    color: "#149ECA",
     icon: "git",
-    link: "https://git-scm.com/",
-  },
-  {
-    name: "Photoshop",
-    color: "#31A8FF",
-    icon: "photoshop",
-    link: "https://www.adobe.com/cn/lead/creativecloud/business.html",
-  },
-  {
-    name: "ChatGPT",
-    color: "#4AA181",
-    icon: "chatgpt",
-    link: "https://chat.openai.com/",
+    link: "https://c++",
   },
 ];
 
