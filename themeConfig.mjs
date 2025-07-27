@@ -3,13 +3,13 @@ export const themeConfig = {
   // 站点信息
   siteMeta: {
     // 站点标题
-    title: "九天之上",
+    title: "zczc's blog",
     // 站点描述
     description: "基于 vitepress-theme-curve 搭建的 github pages 站点",
     // 站点logo
     logo: "/images/logo/logo.webp",
     // 站点地址
-    site: "https://blog2.811520.xyz",
+    site: "https://zczc1226.github.io",
     // 语言
     lang: "zh-CN",
     // 作者
@@ -23,7 +23,7 @@ export const themeConfig = {
   // 备案信息
   icp: "鄂ICP备202411-001号",
   // 建站日期
-  since: "2024-11-1",
+  since: "2025-7-26",
   // 每页文章数据
   postSize: 8,
   // inject
@@ -121,17 +121,12 @@ export const themeConfig = {
     {
       text: "专栏",
       items: [
-        { text: "技术分享", link: "/pages/categories/技术分享", icon: "technical" },
-        { text: "我的项目", link: "/pages/project", icon: "code" },
-        { text: "收藏大全", link: "https://daoyi.hidns.vip/#/", icon: "tools" },
-        { text: "工作备忘", link: "/pages/categories/工作备忘", icon: "people" },
-        //{ text: "效率工具", link: "/pages/tools", icon: "tools" },
+        { text: "学习备忘", link: "/pages/categories/学习备忘", icon: "technical" },
       ],
     },
     {
       text: "友圈",
       items: [
-        { text: "友圈鱼塘", link: "/pages/friends", icon: "fish" },
         { text: "友情链接", link: "/pages/link", icon: "people" },
         { text: "畅所欲言", link: "/pages/message", icon: "chat" },
       ],
@@ -152,87 +147,28 @@ export const themeConfig = {
       name: "博客",
       list: [
         {
-          icon: "/images/logo/logo.webp",
+          icon: "https://cdn.luogu.com.cn/upload/image_hosting/hd9rbs10.png",
           name: "博客主站",
-          url: "https://blog.811520.xyz/",
+          url: "/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "https://cdn.luogu.com.cn/upload/image_hosting/hd9rbs10.png",
           name: "博客演示站",
           url: "/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "https://cdn.luogu.com.cn/upload/image_hosting/hd9rbs10.png",
           name: "个人主页",
-          url: "https://daoyi.hidns.vip/#/",
+          url: "/",
         },
         {
-          icon: "/images/logo/logo.webp",
+          icon: "https://cdn.luogu.com.cn/upload/image_hosting/hd9rbs10.png",
           name: "私有工具",
-          url: "https://blog.811520.xyz/tlink/",
+          url: "/",
         },
       ],
     },
-    {
-      name: "常用",
-      list: [
-        {
-          icon: "https://cover.ruom.top/favicon.ico",
-          name: "封面制作",
-          url: "https://cover.ruom.top/",
-        },
-        {
-          icon: "https://www.favicon.vip/get.php?url=img.ytian.us.kg",
-          name: "兰空图床",
-          url: "https://img.811520.xyz/",
-        },
-        {
-          icon: "https://pan.811520.xyz/2024-10/插入链接.webp",
-          name: "短链生成",
-          url: "https://slink.yuzong.nyc.mn/duanlian",  
-        },
-        {
-          icon: "https://ctool.dev/favicon.ico",
-          name: "开发工具",
-          url: "https://ctool.dev/",
-        },
-        {
-          icon: "https://suburl.v1.mk/favicon.ico",
-          name: "图片压缩",
-          url: "https://imgtool.v1.mk/",
-        },
-        {
-          icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
-          name: "博客仓库",
-          url: "https://github.com/yutian81/yutian81.github.io",
-        },
-      ],
-    },
-    {
-      name: "服务",
-      list: [
-        {
-          icon: "https://pan.811520.xyz/2024-11/1730875618-1730875614898.webp",
-          name: "今日热榜",
-          url: "https://hot.imsyy.top/",
-        },
-        {
-          icon: "https://rss.811520.xyz/favicon.ico",
-          name: "友圈后端",
-          url: "https://rss.811520.xyz/",
-        },
-        {
-          icon: "https://pan.811520.xyz/2024-11/1730634973-Cloudflare_Logo.webp",
-          name: "CF优选",
-          url: "https://blog2.811520.xyz/blogrss/",
-        },
-        {
-          icon: "https://github.githubassets.com/assets/apple-touch-icon-144x144-b882e354c005.png",
-          name: "Serv00",
-          url: "https://github.com/yutian81/serv00-ct8-ssh",
-        },
-      ],
-    },
+
   ],
   // 封面配置
   cover: {
@@ -256,20 +192,13 @@ export const themeConfig = {
     // 社交链接（请确保为偶数个）
     social: [
       {
-        icon: "email",
-        link: "mailto:admin@24811213.xyz",
+        icon: "luogu",
+        link: "https://www.luogu.com.cn/user/1442389",
       },
       {
         icon: "github",
-        link: "https://github.com/yutian81/",
+        link: "https://github.com/zczc1226/",
       },
-      {
-        icon: "telegram",
-        link: "https://t.me/yutian88881",
-      },
-      {
-        icon: "bilibili",
-        link: "https://space.bilibili.com/677845115",
       },
     ],
     // sitemap
@@ -279,54 +208,27 @@ export const themeConfig = {
         items: [
           { text: "近期文章", link: "/" },
           { text: "全部分类", link: "/pages/categories" },
-          { text: "全部标签", link: "/pages/tags" },
-          { text: "文章归档", link: "/pages/archives" },
-        ],
-      },
-      {
-        text: "云端平台",
-        items: [
-          { text: "Vercel", link: "https://vercel.com/", newTab: true },
-          { text: "NorthFlank", link: "https://app.northflank.com/", newTab: true },
-          { text: "Koyeb", link: "https://app.koyeb.com/", newTab: true },
-          { text: "Huawei", link: "https://www.huaweicloud.com/intl/zh-cn/", newTab: true },
         ],
       },
       {
         text: "我的专栏",
         items: [
-          { text: "技术分享", link: "/pages/categories/技术分享" },
           { text: "我的项目", link: "/pages/project" },
-          { text: "收藏大全", link: "https://daoyi.hidns.vip/#/", newTab: true },
-          { text: "工作备忘", link: "/pages/categories/工作备忘" },
+          { text: "学习备忘", link: "/pages/categories/学习备忘" },
         ],
       },
       {
         text: "项目推荐",
         items: [
-          { text: "edgetunnel", link: "https://github.com/cmliu/edgetunnel", newTab: true },
-          { text: "twikoo", link: "https://github.com/yutian81/twikoo", newTab: true },
-          { text: "alist", link: "https://alist.nn.ci/zh/", newTab: true },
-          { text: "nezha", link: "https://nezha.wiki/guide/dashboard.html", newTab: true },
         ],
       }, 
       {        
         text: "页面导航",
         items: [
-          //{ text: "畅所欲言", link: "/pages/message" },
           { text: "关于本站", link: "/pages/about" },
           { text: "隐私政策", link: "/pages/privacy" },
           { text: "版权协议", link: "/pages/cc" },
           { text: "致谢名单", link: "/pages/thanks" },
-        ],
-      },
-      {
-        text: "网站服务",
-        items: [
-          { text: "音乐时刻", link: "https://blog.811520.xyz/music/", newTab: true },
-          { text: "站点状态", link: "https://uptime.ytian.us.kg/status/service", newTab: true },
-          { text: "站点订阅", link: "https://blog2.811520.xyz/rss.xml", newTab: true },
-          { text: "问题反馈", link: "https://github.com/yutian81/yutian81.github.io/issues", newTab: true, },
         ],
       },
     ],
@@ -359,7 +261,7 @@ export const themeConfig = {
     // 站点简介
     hello: {
       enable: true,
-      text: "这里有我的各种<strong>折腾笔记</strong>，也有一些<strong>工作备忘</strong>和<strong>生活随笔</strong>。又菜又爱玩，<strong>万事都不难</strong>。",
+      text: "这里有我的各种<strong>折腾笔记</strong>，也有一些<strong>生活随笔</strong>。",
     },
     // 目录
     toc: {
@@ -374,8 +276,16 @@ export const themeConfig = {
       enable: true,
       // 倒计时日期
       data: {
-        name: "春节",
-        date: "2025-05-01",
+        name: "元旦",
+        date: "2025-01-01",
+      },
+      data: {
+        name: "暑假开始:)",
+        date: "2025-07-01",
+      },
+      data: {
+        name: "暑假结束:(",
+        date: "2025-08-31",
       },
     },
     // 站点数据
@@ -393,64 +303,6 @@ export const themeConfig = {
       app_token: "",
       table_id: "",
     },
-  },
-  // 音乐播放器
-  // https://github.com/imsyy/Meting-API
-  music: {
-    enable: false,
-    // url
-    url: "https://meting-api-ten.vercel.app",
-    // id
-    id: 8152976493,
-    // netease / tencent / kugou
-    server: "netease",
-    // playlist / album / song
-    type: "playlist",
-  },
-  // 搜索
-  // https://www.algolia.com/
-  search: {
-    enable: true,
-    appId: "J8AAAZLZZ7",
-    apiKey: "94c1d72ea8e1533fc67c3e7244c7e196",
-    indexName: "daoyi-wiki",
-  },
-  // 打赏
-  rewardData: {
-    enable: true,
-    // 微信二维码
-    wechat: "https://pan.811520.xyz/2024-11/1730603920-wechatpay.webp",
-    // 支付宝二维码
-    alipay: "https://pan.811520.xyz/2024-11/1730603921-alipay.webp",
-  },
-  // 图片灯箱
-  fancybox: {
-    enable: true,
-    js: "https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/fancyapps-ui/5.0.36/fancybox/fancybox.umd.min.js",
-    css: "https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/fancyapps-ui/5.0.36/fancybox/fancybox.min.css",
-  },
-  // 外链中转
-  jumpRedirect: {
-    enable: true,
-    // 排除类名
-    exclude: [
-      "cf-friends-link",
-      "upyun",
-      "icp",
-      "author",
-      "rss",
-      "cc",
-      "power",
-      "social-link",
-      "link-text",
-      "travellings",
-      "post-link",
-      "report",
-      "more-link",
-      "skills-item",
-      "right-menu-link",
-      "link-card",
-    ],
   },
   // 站点统计
   tongji: {
